@@ -1,5 +1,5 @@
 {
-  "name": "modern_portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
-  "author": "c0d3d1",
+  "author": "c0d3d",
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^3.1.0",
