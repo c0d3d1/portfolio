@@ -54,7 +54,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(/dist/img/img/portrait.jpg);
+      background: url(/img/portrait.jpg);
       border-radius: 50%;
       border: solid 3px #fee715ff; }
   .menu .nav-item {
@@ -100,7 +100,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-a {
-    background: url(/dist/img/img/back2.jpg) 0 0;
+    background: url(/img/back2.jpg) 0 0;
     background-attachment: fixed;
     background-size: cover; }
     body#bg-a::after {
