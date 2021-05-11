@@ -11,6 +11,7 @@
   "author": "c0d3d",
   "license": "MIT",
   "dependencies": {
+    "sass-loader": "^7.2.0",
     "gh-pages": "^1.2.0",
     "node-sass": "^4.14.1"
   }
