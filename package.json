@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "homepage": "https://c0d3d1.github.io/portfolio",
+  "homepage": ".",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
