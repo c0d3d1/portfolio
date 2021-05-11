@@ -8,7 +8,7 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
-  "author": "c0d3d",
+  "author": "c0d3d1",
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^3.1.0",
