@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(55, 55, 55, 0.9);
+    background: rgba(8, 11, 15, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(68, 68, 68, 0.9);
+    background: rgba(16, 24, 32, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -56,14 +56,14 @@
       height: 250px;
       background: url("/dist/img/img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #fee715ff; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #fee715ff; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -75,7 +75,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #fee715ff; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -93,7 +93,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #101820ff;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -110,7 +110,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.9);
+      background: rgba(16, 24, 32, 0.9);
       z-index: -1; }
 
 h1,
@@ -127,7 +127,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(19, 29, 39, 0.5); }
 
 a {
   color: #fff;
@@ -140,7 +140,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #fee715ff; }
 
 main {
   padding: 4rem;
@@ -150,7 +150,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #fee715ff;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -166,20 +166,30 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #fee715ff 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+  .about-info .fas {
+    padding-bottom: 15px; }
+  .about-info .fab {
+    padding-bottom: 15px; }
   .about-info .job-1 {
+    box-shadow: -9px -9px 0px -3px #c6b201;
     grid-area: job1; }
   .about-info .job-2 {
+    box-shadow: -9px -9px 0px -3px #c6b201;
     grid-area: job2; }
   .about-info .job-3 {
+    box-shadow: -9px -9px 0px -3px #c6b201;
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    margin-top: 1rem;
+    background: #192531;
+    padding: 1.5rem;
+    min-height: 400px; }
+    .about-info .job p {
+      font-size: 1.2rem; }
 
 .projects {
   display: grid;
@@ -190,8 +200,27 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #fee715ff;
       transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #fee715ff;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -199,7 +228,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #fee715ff;
     color: #000; }
 
 .btn-dark {
@@ -207,13 +236,13 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #7598ba;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #0b1016;
   color: #fff;
   height: 60px; }
 
@@ -262,5 +291,14 @@ main {
   main#home h1 {
     margin-top: 10vh;
     font-size: 4rem; }
+  .projects {
+    grid-template-columns: 1fr; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
