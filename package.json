@@ -6,7 +6,7 @@
   "homepage": "https://c0d3d1.github.io/new_portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "author": "c0d3d",
   "license": "MIT",
